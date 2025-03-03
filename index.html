@@ -1,31 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Landing Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="navbar">
-        <div class="nav-logo"><b>TOURNEST</b></div>
-
-            <ul>
-            <li><a href="#home">Home</a> </li>
-            <li><a href="#destination">Destination</a> </li>
-           <li> <a href="#packages">Packages</a> </li>
-            <li><a href="#blogs"> Blogs</a> </li>
-           <li> <a href="#subscription">Subscription</a> </li>
-            </ul>
-            <div class="button">
-                <button>Book Now</button>
-            </div>
-  </div>
+  <!-- NAVBAR MENU -->
+  <header>
+       <div class="navbar">
+        <ul class="sidebar">
+          <li><a href="Home">Home</a></li>
+          <li><a href="Destination">Destination</a></li>
+          <li><a href="Package">Package</a></li>
+          <li><a href="Blog">Blog</a></li>
+          <li><a href="Subscription">Subscription</a><li>        
+        </ul>
+        <div class="logo"><b>TOUR</b><div class="sublogo"><b>NEST</b></div></div>
+        <ul>
+          <li><a href="Home">Home</a></li>
+          <li><a href="Destination">Destination</a></li>
+          <li><a href="Package">Package</a></li>
+          <li><a href="Blog">Blog</a></li>
+          <li><a href="Subscription">Subscription</a><li>
+          <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>        
+        </ul>
+       </div>
+  </header>
+  <!-- content and background image -->
+  <div class="background-image">
   <div class="content">
-    Explore the Beauty of the Beautiful World. 
+    <p>Explore the beauty of the beautiful world.</p>
+    <button>Explore Now</button>
   </div>
-
-    
+  </div>
+  <!-- TAGS SECTION 1st -->
+  <div class="tags-section">
+    <div class="box">
+      <div class="box-content">
+        <h2><i class="fa-solid fa-tornado"></i> Tours</h2>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2><i class="fa-solid fa-hotel"></i> Hotels</h2>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2><i class="fa-solid fa-plane-departure"></i> Flights</h2>
+      </div>
+    </div>
+  </div>
+   <!-- TAGS SECTION 2nd -->
+  <div class="panel">
+    <h2>DESTINATION</h2>
+    <div class="place-location">
+    <select name="country" id="Place" style="color: rgb(8, 117, 160);">
+      <option>Select place</option>
+      <option> Goa</option>
+       <option> Dalhousie</option>
+       <option> Jammu & Kashmir</option>
+       <option> Auli</option>
+       <option>Nepal</option>
+       <option> Kerala</option>      
+    </select>
+    <select name="location" id="Area" style="color: rgb(8, 117, 160);">
+      <option> Select location</option>
+       <option> Panchpula</option>
+       <option> Palolem Beach</option>
+       <option> Gulmarg</option>
+       <option> Amarnath</option>
+       <option> Pokhara</option>
+       <option> Chitwan National Park</option>
+       <option> Sree Padmanabhaswamy Temple</option>
+       <option> Gorson Bugyal</option>
+       <option> Trishul Peak</option>
+       <option> Kalatop wildlife</option>     
+    </select>
+    <div class="time-duration">
+      <div class="in-time">
+        <h2>Check In</h2>
+        <input type="datetime-local">
+      </div>
+      <div class="out-time">
+        <h2>Check Out</h2>
+        <input type="datetime-local">
+      </div>
+      <div class="days">
+        <h2>Duration</h2>
+        <input type="number">
+      </div>
+      <div class="perons-count">
+        <h2>Member</h2>
+        <input type="number">
+      </div>
+    </div>    
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
